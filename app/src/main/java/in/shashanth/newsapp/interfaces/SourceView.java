@@ -13,5 +13,6 @@ public interface SourceView {
     void showSources(List<Source> sourceList);
     void showAlertMessage(String message);
     void showProgressDialog(String message);
+    void onSourceClicked(Source source);
     void hideProgressDialog();
 }

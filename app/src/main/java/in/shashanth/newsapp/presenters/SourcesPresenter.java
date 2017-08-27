@@ -32,8 +32,8 @@ public class SourcesPresenter implements RequestListener<SourcesWrapper> {
         if (sourcesWrapper != null) {
             if ("ok".equals(sourcesWrapper.getStatus())) {
                 sourceView.showSources(sourcesWrapper.getSourcesList());
-            } else {
-                sourceView.showAlertMessage("Something went wrong...");
+            } else if ("error".equals(sourcesWrapper.getStatus())){
+                sourceView.showAlertMessage(sourcesWrapper.getErrorMessage());
             }
         }
     }

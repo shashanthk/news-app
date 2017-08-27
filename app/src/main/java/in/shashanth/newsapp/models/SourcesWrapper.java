@@ -12,11 +12,17 @@ public class SourcesWrapper {
 
     @SerializedName("status")
     private String status;
+    @SerializedName("message")
+    private String errorMessage;
     @SerializedName("sources")
     private List<Source> sources = null;
 
     public String getStatus() {
         return status;
+    }
+
+    public String getErrorMessage() {
+        return errorMessage;
     }
 
     public List<Source> getSourcesList() {

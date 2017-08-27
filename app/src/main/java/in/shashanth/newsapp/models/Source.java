@@ -46,7 +46,7 @@ public class Source {
     }
 
     public String getCategory() {
-        return category;
+        return (category.substring(0, 1).toUpperCase() + category.substring(1));
     }
 
     public String getLanguage() {
