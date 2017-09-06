@@ -1,7 +1,7 @@
 package in.shashanth.newsapp.service.retrofit;
 
-import in.shashanth.newsapp.models.ArticlesWrapper;
-import in.shashanth.newsapp.models.SourcesWrapper;
+import in.shashanth.newsapp.articles.ArticlesWrapper;
+import in.shashanth.newsapp.source.SourcesWrapper;
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Query;

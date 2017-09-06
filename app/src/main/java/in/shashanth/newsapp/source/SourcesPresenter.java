@@ -1,9 +1,7 @@
-package in.shashanth.newsapp.presenters;
+package in.shashanth.newsapp.source;
 
 import in.shashanth.newsapp.interfaces.RequestListener;
 import in.shashanth.newsapp.interfaces.RestService;
-import in.shashanth.newsapp.interfaces.SourceView;
-import in.shashanth.newsapp.models.SourcesWrapper;
 
 /**
  * Created by shashanth on 27/8/17.

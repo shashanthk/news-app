@@ -1,4 +1,4 @@
-package in.shashanth.newsapp.models;
+package in.shashanth.newsapp.articles;
 
 import com.google.gson.annotations.SerializedName;
 

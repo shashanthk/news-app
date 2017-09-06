@@ -48,4 +48,10 @@ dependencies {
     compile "com.squareup.okhttp3:logging-interceptor:${HTTP_LOGGING_LIB_VER}"
     compile "com.google.code.gson:gson:${GSON_LIB_VER}"
     compile "com.squareup.retrofit2:converter-gson:${GSON_CONVERTER_LIB_VER}"
+
+    // firebase
+    compile 'com.google.firebase:firebase-auth:11.2.0'
+    // compile 'com.google.android.gms:play-services-auth:11.2.0'
 }
+
+apply plugin: 'com.google.gms.google-services'

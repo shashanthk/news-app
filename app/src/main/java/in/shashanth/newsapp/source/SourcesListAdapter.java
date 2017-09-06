@@ -1,4 +1,4 @@
-package in.shashanth.newsapp.adapters;
+package in.shashanth.newsapp.source;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -9,8 +9,6 @@ import android.widget.TextView;
 import java.util.List;
 
 import in.shashanth.newsapp.R;
-import in.shashanth.newsapp.interfaces.SourceView;
-import in.shashanth.newsapp.models.Source;
 
 /**
  * Created by shashanth on 27/8/17.

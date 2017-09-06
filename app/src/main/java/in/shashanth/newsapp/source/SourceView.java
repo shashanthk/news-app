@@ -1,8 +1,6 @@
-package in.shashanth.newsapp.interfaces;
+package in.shashanth.newsapp.source;
 
 import java.util.List;
-
-import in.shashanth.newsapp.models.Source;
 
 /**
  * Created by shashanth on 27/8/17.

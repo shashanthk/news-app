@@ -2,11 +2,11 @@ package in.shashanth.newsapp.service.retrofit;
 
 import java.util.concurrent.TimeUnit;
 
+import in.shashanth.newsapp.articles.ArticlesWrapper;
 import in.shashanth.newsapp.interfaces.RequestListener;
 import in.shashanth.newsapp.interfaces.RestService;
-import in.shashanth.newsapp.models.ArticlesWrapper;
-import in.shashanth.newsapp.models.SourcesWrapper;
 import in.shashanth.newsapp.service.RestConstants;
+import in.shashanth.newsapp.source.SourcesWrapper;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Call;

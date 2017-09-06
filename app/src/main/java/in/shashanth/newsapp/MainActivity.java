@@ -1,4 +1,4 @@
-package in.shashanth.newsapp.ui.activities;
+package in.shashanth.newsapp;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -9,12 +9,11 @@ import android.widget.Toast;
 
 import java.util.List;
 
-import in.shashanth.newsapp.R;
-import in.shashanth.newsapp.adapters.SourcesListAdapter;
-import in.shashanth.newsapp.interfaces.SourceView;
-import in.shashanth.newsapp.models.Source;
-import in.shashanth.newsapp.presenters.SourcesPresenter;
 import in.shashanth.newsapp.service.retrofit.RetrofitManager;
+import in.shashanth.newsapp.source.Source;
+import in.shashanth.newsapp.source.SourceView;
+import in.shashanth.newsapp.source.SourcesListAdapter;
+import in.shashanth.newsapp.source.SourcesPresenter;
 import in.shashanth.newsapp.util.ui.UIHandlers;
 
 /**
