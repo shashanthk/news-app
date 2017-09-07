@@ -5,4 +5,14 @@ package in.shashanth.newsapp.registration;
  */
 
 public interface RegistrationInteractor {
+
+    interface OnRegistrationFinishedListener{
+        void invalidEmail();
+        void invalidPassword();
+        void onSuccess();
+        void onFailure(String message);
+    }
+
+    void registerWithEmailAndPassword(String email, String password);
+    void gotoLogin();
 }

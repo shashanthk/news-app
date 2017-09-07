@@ -5,4 +5,10 @@ package in.shashanth.newsapp.registration;
  */
 
 public interface RegistrationView {
+    void showProgress();
+    void hideProgress();
+    void invalidEmailId();
+    void invalidPassword();
+    void onSuccess();
+    void onFailure(String message);
 }
