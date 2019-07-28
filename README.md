@@ -1,0 +1,1 @@
+Sample Dagger 2 project which consumes [News API](https://newsapi.org) and displays it in this app.
