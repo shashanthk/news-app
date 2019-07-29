@@ -2,12 +2,15 @@ package in.shashanth.di;
 
 import android.app.Application;
 
+import javax.inject.Singleton;
+
 import dagger.BindsInstance;
 import dagger.Component;
 import dagger.android.AndroidInjector;
 import dagger.android.support.AndroidSupportInjectionModule;
 import in.shashanth.BaseApplication;
 
+@Singleton
 @Component(
         modules = {
                 AndroidSupportInjectionModule.class,

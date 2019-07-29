@@ -11,6 +11,8 @@ import dagger.android.support.DaggerAppCompatActivity;
 
 public class MainActivity extends DaggerAppCompatActivity {
 
+    private static final String TAG = "MainActivity";
+
     @Inject
     Picasso picasso;
 

@@ -36,4 +36,7 @@ dependencies {
     annotationProcessor "com.google.dagger:dagger-compiler:$rootProject.ext.dagger_lib"
 
     implementation "com.squareup.picasso:picasso:$rootProject.ext.picasso_lib"
+    implementation "com.squareup.retrofit2:retrofit:$rootProject.ext.retrofit_lib"
+    implementation "com.squareup.retrofit2:converter-gson:$rootProject.ext.retrofit_lib"
+    implementation "com.squareup.okhttp3:logging-interceptor:$rootProject.ext.http_logging_lib"
 }
