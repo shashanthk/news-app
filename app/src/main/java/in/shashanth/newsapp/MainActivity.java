@@ -1,4 +1,4 @@
-package in.shashanth;
+package in.shashanth.newsapp;
 
 import android.os.Bundle;
 import android.widget.ImageView;

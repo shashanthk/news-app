@@ -1,8 +1,8 @@
-package in.shashanth.di;
+package in.shashanth.newsapp.di;
 
 import dagger.Module;
 import dagger.android.ContributesAndroidInjector;
-import in.shashanth.MainActivity;
+import in.shashanth.newsapp.MainActivity;
 
 @Module
 public abstract class ActivityBuildersModule {

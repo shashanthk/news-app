@@ -1,4 +1,4 @@
-package in.shashanth.api;
+package in.shashanth.newsapp.api;
 
 import okhttp3.ResponseBody;
 import retrofit2.Call;

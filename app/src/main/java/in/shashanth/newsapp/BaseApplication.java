@@ -1,8 +1,8 @@
-package in.shashanth;
+package in.shashanth.newsapp;
 
 import dagger.android.AndroidInjector;
 import dagger.android.support.DaggerApplication;
-import in.shashanth.di.DaggerAppComponent;
+import in.shashanth.newsapp.di.DaggerAppComponent;
 
 public class BaseApplication extends DaggerApplication {
 

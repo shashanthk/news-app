@@ -1,4 +1,4 @@
-package in.shashanth.api;
+package in.shashanth.newsapp.api;
 
 public final class ApiConstants {
 

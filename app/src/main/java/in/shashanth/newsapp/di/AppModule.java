@@ -1,4 +1,4 @@
-package in.shashanth.di;
+package in.shashanth.newsapp.di;
 
 import android.app.Application;
 import android.util.Log;
@@ -9,9 +9,9 @@ import javax.inject.Singleton;
 
 import dagger.Module;
 import dagger.Provides;
-import in.shashanth.BuildConfig;
-import in.shashanth.api.ApiConstants;
-import in.shashanth.api.NewsApi;
+import in.shashanth.newsapp.BuildConfig;
+import in.shashanth.newsapp.api.ApiConstants;
+import in.shashanth.newsapp.api.NewsApi;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
