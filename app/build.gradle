@@ -2,7 +2,11 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'kotlin-android-extensions'
+    id 'koin'
 }
+
+def localProperties = new Properties()
+localProperties.load(new FileInputStream(rootProject.file("local.properties")))
 
 android {
     compileSdkVersion 30
@@ -19,6 +23,9 @@ android {
     }
 
     buildTypes {
+        debug {
+            buildConfigField 'String', 'NEWS_API_TOKEN', localProperties['NEWS_API_TOKEN'].toString()
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
@@ -42,6 +49,7 @@ dependencies {
     def view_model_ktx = "2.2.0"
     def live_data_ktx = "2.2.0"
     def fragment_ktx = "1.2.5"
+    def koin_version = "2.2.1"
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation "androidx.core:core-ktx:$core_ktx"
@@ -57,4 +65,12 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:$live_data_ktx"
     implementation "androidx.fragment:fragment-ktx:$fragment_ktx"
 
+    // koin android
+    implementation "org.koin:koin-android:$koin_version"
+    implementation "org.koin:koin-androidx-viewmodel:$koin_version"
+
+    // networking
+    implementation "com.squareup.retrofit2:converter-moshi:2.6.2"
+    implementation "com.squareup.retrofit2:retrofit:2.8.1"
+    implementation "com.squareup.okhttp3:logging-interceptor:4.7.2"
 }
